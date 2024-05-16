@@ -1,0 +1,8 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}

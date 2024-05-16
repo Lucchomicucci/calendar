@@ -1,0 +1,84 @@
+.day{
+  width: 100px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  padding-left: 6px;
+  font-size: 20px;
+}
+
+.day-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-day {
+  width: 100px;
+  height: 100px;
+  animation: all ease 1s;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: rgb(201, 201, 201);
+  color: black;
+  font-size: 18px;
+}
+
+.calendar-day-available {
+  width: 100px;
+  height: 100px;
+  animation: all ease 1s;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: green;
+  color: black;
+  font-size: 18px;
+}
+
+.daycell {
+  display: flex;
+  gap: 4px;
+  margin: 4px 0px 4px 0px;
+}
+
+.calendar-day:hover {
+  background-color: rgb(190, 190, 190);
+  animation: all ease 1s;
+}
+
+.calendar-day-current {
+  padding: 6px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 183, 255);
+  /* border: 0.5px solid gray; */
+  border-radius: 4px;
+}
+
+.calendar-day-available:hover {
+  background-color: rgb(2, 95, 2);
+  cursor: pointer;
+}
+
+.calendar-day-current:hover {
+  background-color: rgb(0, 119, 255);
+}
+
+@media (max-width: 768px) {
+  .calendar-day-current {
+    width: 50px;
+    height: 50px;
+  }
+
+  .calendar-day-available {
+    width: 50px;
+    height: 50px;
+  }
+
+ .calendar-day {
+    width: 50px;
+    height: 50px;
+  }
+
+  .day{
+    width: 50px;
+  }
+}
